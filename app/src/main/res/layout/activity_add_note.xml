@@ -8,6 +8,7 @@
     android:padding="16dp"
     tools:context=".AddNoteActivity">
 
+    <!-- Heading TextView for "Add Note" -->
     <TextView
         android:id="@+id/addNoteHeading"
         android:layout_width="wrap_content"
@@ -17,9 +18,9 @@
         android:fontFamily="@font/poppins"
         android:text="Add Note"
         android:textColor="@color/orange"
-        android:textSize="24sp"
-        />
+        android:textSize="24sp" />
 
+    <!-- Save Button ImageView -->
     <ImageView
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
@@ -31,6 +32,7 @@
         android:layout_marginBottom="8dp"
         android:src="@drawable/baseline_check_24" />
 
+    <!-- Title EditText -->
     <EditText
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
@@ -42,8 +44,9 @@
         android:background="@drawable/orange_border"
         android:layout_marginTop="16dp"
         android:maxLines="1"
-        android:fontFamily="@font/poppins"/>
+        android:fontFamily="@font/poppins" />
 
+    <!-- Content EditText -->
     <EditText
         android:id="@+id/contentEditText"
         android:layout_width="match_parent"
@@ -55,7 +58,6 @@
         android:fontFamily="@font/poppins"
         android:background="@drawable/orange_border"
         android:layout_below="@id/titleEditText"
-        android:layout_marginTop="12dp"
-        />
+        android:layout_marginTop="12dp" />
 
 </RelativeLayout>

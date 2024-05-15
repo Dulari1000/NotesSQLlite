@@ -7,7 +7,8 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp"
     app:cardUseCompatPadding="true">
-    
+
+    <!-- Layout for each note item -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,12 +16,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp">
 
+        <!-- Relative layout for title and action buttons -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp">
-            
+
+            <!-- TextView for displaying the title of the note -->
             <TextView
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
@@ -30,9 +33,9 @@
                 android:textColor="@color/orange"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="8dp"
-                />
+                android:layout_marginLeft="8dp" />
 
+            <!-- ImageView for updating the note -->
             <ImageView
                 android:id="@+id/updateButton"
                 android:layout_width="24dp"
@@ -41,6 +44,7 @@
                 android:layout_marginEnd="46dp"
                 android:src="@drawable/baseline_create_24" />
 
+            <!-- ImageView for deleting the note -->
             <ImageView
                 android:id="@+id/deleteButton"
                 android:layout_width="wrap_content"
@@ -51,6 +55,7 @@
 
         </RelativeLayout>
 
+        <!-- TextView for displaying the content of the note -->
         <TextView
             android:id="@+id/contentTextView"
             android:layout_width="379dp"
@@ -63,6 +68,4 @@
             android:text="Content" />
 
     </LinearLayout>
-    
-
 </androidx.cardview.widget.CardView>
